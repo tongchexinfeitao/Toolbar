@@ -1,0 +1,41 @@
+<resources>
+
+
+    <!--application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--application Base  theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--不显示ActionBar-->
+        <item name="windowActionBar">false</item>
+        <!--不显示标题-->
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!--设置toolbar的theme-->
+    <style name="toolbar_theme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <!--修改toolbar的Title(大标题)颜色    这属性名字必须带android不然无效-->
+        <item name="android:textColorPrimary">@android:color/holo_red_dark</item>
+        <!--修改toolbar的subtitle(小标题)颜色-->
+        <item name="subtitleTextColor">@android:color/holo_red_dark</item>
+        <!--修改toolbar的图标颜色.-->
+        <item name="colorControlNormal">@android:color/holo_red_dark</item>
+    </style>
+
+    <!--设置toolbar的menu的popupStyle-->
+    <style name="toolbar_popup" parent="@style/ThemeOverlay.AppCompat.Light">
+        <!--设置menu背景-->
+        <item name="android:background">@android:color/white</item>
+        <!--设置menu字体颜色-->
+        <item name="android:textColor">@android:color/black</item>
+        <!--设置不覆盖锚点 , 也就是不遮挡toolbar-->
+        <item name="overlapAnchor">false</item>
+    </style>
+
+
+</resources>
